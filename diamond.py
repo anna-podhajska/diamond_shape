@@ -13,7 +13,6 @@ try:
 except:
     print ' error '
 
-
 spaces_number = int(raw)
 
 upper_part = True
