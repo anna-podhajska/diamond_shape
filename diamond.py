@@ -1,20 +1,20 @@
 #practising loops in python#
 
 space = ' '
-number_of_stars_in_row = 0  # w rzedzie #
+number_of_stars_in_row = 0  # in a row
 spaces_number = 0
 
-raw = raw_input('wpisz maksymalna ilosc gwiazdek: ')
+raw = raw_input('Determine the width of the shape by providing a number: ')
 
 try:
 
-    max_no_of_stars = int(raw)  # zmiana na int
+    max_no_of_stars = int(raw)
 
 except:
     print ' error '
 
 
-spaces_number = int(raw)  # zmiana na int
+spaces_number = int(raw)
 
 upper_part = True
 lower_part = False
