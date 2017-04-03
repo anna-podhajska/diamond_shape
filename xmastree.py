@@ -1,53 +1,48 @@
-# choinka gora plus dol
+#practising loops in python#
 
-
-gwiazdka = "*"
-spacja = ' '
-ilosc_gwiazdek = 0  # w rzedzie #
-ilosc_spacji = 0
+space = ' '
+number_of_stars_in_row = 0  # w rzedzie #
+spaces_number = 0
 
 raw = raw_input('wpisz maksymalna ilosc gwiazdek: ')
 
 try:
 
-    max_liczba_gwiazdek = int(raw)  # zmiana na int
-    
+    max_no_of_stars = int(raw)  # zmiana na int
+
 except:
-    print ' error ' 
-    
-    
-ilosc_spacji = int(raw)  # zmiana na int
+    print ' error '
 
-gora = True
-dol = False
 
-while gora:
+spaces_number = int(raw)  # zmiana na int
 
-	ilosc_gwiazdek = ilosc_gwiazdek + 1
-	ilosc_spacji = ilosc_spacji - 1
+upper_part = True
+lower_part = False
 
-	print ilosc_spacji * spacja,
+while upper_part:
+
+	number_of_stars_in_row = number_of_stars_in_row + 1
+	spaces_number = spaces_number - 1
+
+	print spaces_number * space,
 	print '*',
-	print (ilosc_gwiazdek * gwiazdka) * 2,
+	print (number_of_stars_in_row * gwiazdka) * 2,
 	print '*'
 
-	if ilosc_gwiazdek == max_liczba_gwiazdek:
-		dol = True
-		gora = False
+	if number_of_stars_in_row == max_no_of_stars:
+		lower_part = True
+		upper_part = False
 
-while dol:
+while lower_part:
 
-	ilosc_gwiazdek = ilosc_gwiazdek - 1
-	ilosc_spacji = ilosc_spacji + 1
+	number_of_stars_in_row = number_of_stars_in_row - 1
+	spaces_number = spaces_number + 1
 
-	print ilosc_spacji * spacja,
+	print spaces_number * space,
 	print '*',
-	print (ilosc_gwiazdek * gwiazdka) * 2,
+	print (number_of_stars_in_row * gwiazdka) * 2,
 	print '*'
 
-	if ilosc_spacji == max_liczba_gwiazdek: break
-	#dol = False
-            #gora = True
-        
-
-
+	if spaces_number == max_no_of_stars: break
+	#lower_part = False
+            #upper_part = True
