@@ -3,6 +3,7 @@
 space = ' '
 number_of_stars_in_row = 0  # in a row
 spaces_number = 0
+gwiazdka = "*"
 
 raw = raw_input('Determine the width of the shape by providing a number: ')
 
